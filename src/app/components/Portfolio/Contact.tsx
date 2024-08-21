@@ -17,7 +17,7 @@ export function Contact() {
       icon: (
         <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "mailto:ramkrishna18547@gmail.com", // Update with your email
+      href: `mailto:ramkrishna18547@gmail.com`, // Update with your email
     },
     {
       title: "WhatsApp",
@@ -38,21 +38,14 @@ export function Contact() {
       icon: (
         <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://instagram.com/yourprofile", // Update with your Instagram profile link
-    },
-    {
-      title: "Discord",
-      icon: (
-        <IconBrandDiscordFilled className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "https://discord.com/invite/yourserver", // Update with your Discord invite link
+      href: "https://instagram.com/ganesh18547", // Update with your Instagram profile link
     },
     {
       title: "Twitter",
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://twitter.com/yourprofile", // Update with your Twitter profile link
+      href: "https://x.com/i/flow/login?redirect_after_login=%2FRamkris53156502 ", // Update with your Twitter profile link
     },
   ];
 
