@@ -80,10 +80,14 @@ const people = [
 export function Skilles() {
   return (
     <div className="my-20">
-      <div className="text-center text-4xl font-bold ">
-        <p>My Skill</p>
+      <div className="text-center ">
+        <p className="text-4xl font-bold ">My Skill</p>
+        <p className="  lg:text-[14px] text-[12px] mt-5 px-5">
+          You can customize this to include more skills or use icons and other
+          effects as needed. Let me know if you need more enhancements!
+        </p>
       </div>
-      <div className="flex flex-row items-center justify-center mb-10 w-full mt-10">
+      <div className="flex flex-row items-center justify-center mb-10 w-full mt-10 ml-3 ">
         <AnimatedTooltip items={people} />
       </div>
     </div>

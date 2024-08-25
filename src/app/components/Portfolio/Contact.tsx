@@ -51,8 +51,13 @@ export function Contact() {
 
   return (
     <div className="my-20">
-      <div className="text-center text-4xl font-bold ">
-        <p>Contact</p>
+      <div className="text-center  ">
+        <p className="text-4xl font-bold">Contact Me</p>
+        <p className="mt-5 px-5 lg:text-[14px] text-[12px]">
+          Lets bring your vision to life! I m here to help. Reach out to discuss
+          your project or inquire about my services. I m dedicated to turning
+          your ideas into reality. Contact me today to get started!
+        </p>
       </div>
       <div className="flex items-center justify-center mt-10 w-full">
         <FloatingDock

@@ -55,8 +55,15 @@ export function Services() {
 
   return (
     <div className="mt-8 p-4 md:p-8">
-      <div className="text-center text-2xl md:text-4xl font-bold mb-8">
-        <p>Services</p>
+      <div className=" mb-8">
+        <p className="text-center text-2xl md:text-4xl font-bold">Services</p>
+        <div className="  text-center">
+          <p className=" mt-5 px-5  lg:text-[14px] text-[12px]">
+            By leveraging my expertise in custom software development and server
+            infrastructure management, I m dedicated to turning your ideas into
+            a reality, from setup to optimization and security
+          </p>
+        </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-10">
         {data.map((res) => (
