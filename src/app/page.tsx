@@ -1,4 +1,4 @@
-import { Aboutus } from "./components/Portfolio/Aboutus";
+import Aboutus from "./components/Portfolio/Aboutus";
 import { BackgroundBoxesDemo } from "./components/Portfolio/BackgroundBoxes";
 import { Contact } from "./components/Portfolio/Contact";
 import { Services } from "./components/Portfolio/Services";

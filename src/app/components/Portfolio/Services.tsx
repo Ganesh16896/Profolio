@@ -7,37 +7,49 @@ export function Services() {
       id: 1,
       lang: "WEB DEVELOPING",
       discription:
-        " web development services, creating responsive and user-friendly websites tailored to your business needs. Specializing in modern frameworks like React, Next.js, and Material-UI for high-performance solutions.",
-    },
-    {
-      id: 1,
-      lang: "Full-Stack Development",
-      discription:
-        "Delivering end-to-end solutions by handling both front-end and back-end development, from designing intuitive user interfaces to implementing robust server-side logic and database management.",
+        "We build high-speed, dynamic, and scalable web applications designed to drive user engagement and business growth. Using the latest frameworks like ReactJS, Next.js, and Node.js, our development process focuses on creating custom, performance-optimized solutions tailored to your needs.",
     },
     {
       id: 2,
-      lang: "Front End Development",
+      lang: "Mobile Applications",
       discription:
-        "Building dynamic, interactive user interfaces with modern technologies like React, Next.js, and Material-UI, ensuring a smooth and engaging user experience across all devices.",
+        "We create high-performing mobile applications for Android and iOS, ensuring seamless user experiences from concept to deployment. Our end-to-end solutions cover both front-end and back-end development, including intuitive UI design and robust server-side logic",
     },
     {
       id: 3,
-      lang: "Backend Development",
+      lang: "ECommerce Development",
       discription:
-        "Designing and deploying scalable back-end solutions using Node.js, Express, and serverless architectures.",
+        "Our custom eCommerce solutions are designed to increase your sales and engage your customers. Whether you're a startup or an established business, we build eCommerce platforms that provide smooth, secure shopping experiences and are optimized for conversion.",
+    },
+    {
+      id: 3,
+      lang: "Testing Services",
+      discription:
+        " Our comprehensive testing services ensure that your digital products are reliable, secure, and bug-free before launch. From performance testing to security checks, we leave no stone unturned to guarantee your products are built to the highest standards.",
+    },
+    {
+      id: 3,
+      lang: "Web Design",
+      discription:
+        "Our web design services combine stunning visuals with intuitive functionality, ensuring your website looks fantastic while providing a seamless user experience. We focus on user-centered designs, crafting websites that are both beautiful and highly functional across all devices.",
+    },
+    {
+      id: 3,
+      lang: "DevOps",
+      discription:
+        "We help you automate and streamline your development processes by implementing DevOps best practices. Our DevOps services ensure that your infrastructure is optimized for continuous integration, delivery, and deployment, resulting in faster and more efficient development cycles.",
     },
     {
       id: 4,
-      lang: "API Integration",
+      lang: "Cloud Services",
       discription:
-        "Seamlessly connecting your applications with third-party services and platforms through custom API integrations, enhancing functionality and data flow between systems.",
+        "We offer cloud-based solutions that enable businesses to scale effortlessly and optimize their infrastructure. Whether you're moving to the cloud or improving your current architecture, we provide services that ensure your business is future-ready and able to handle increasing demands.",
     },
     {
       id: 5,
       lang: "API Development ",
       discription:
-        "Building robust RESTful APIs for seamless communication between your applications and external services.",
+        "We build robust RESTful APIs for seamless communication between your applications and external services. Our APIs are designed for performance, scalability, and security, ensuring reliable data exchange. With clear documentation and easy integration, we empower your business to innovate and scale effortlessly.",
     },
     {
       id: 6,
@@ -56,7 +68,9 @@ export function Services() {
   return (
     <div className="mt-8 p-4 md:p-8">
       <div className=" mb-8">
-        <p className="text-center text-2xl md:text-4xl font-bold">Services</p>
+        <p className="text-center text-2xl md:text-4xl font-bold">
+          Our Services
+        </p>
         <div className="  text-center">
           <p className=" mt-5 px-5  lg:text-[14px] text-[12px]">
             By leveraging my expertise in custom software development and server
