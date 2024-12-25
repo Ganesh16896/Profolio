@@ -50,7 +50,7 @@ export function Contact() {
   ];
 
   return (
-    <div className="my-20">
+    <div className="mt-20">
       <div className="text-center  ">
         <p className="text-4xl font-bold">Contact Me</p>
         <p className="mt-5 px-5 lg:text-[14px] text-[12px]">
@@ -64,6 +64,9 @@ export function Contact() {
           mobileClassName="translate-y-20" // only for demo, remove for production
           items={links}
         />
+      </div>
+      <div className="text-center mt-10 border-t-2 border-gray-800 py-5 text-slate-500">
+        <p>Copyright © 2025. All rights reserved.</p>
       </div>
     </div>
   );

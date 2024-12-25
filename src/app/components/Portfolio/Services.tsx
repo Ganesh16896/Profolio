@@ -6,62 +6,67 @@ export function Services() {
     {
       id: 1,
       lang: "WEB DEVELOPING",
-      discription:
-        "We build high-speed, dynamic, and scalable web applications designed to drive user engagement and business growth. Using the latest frameworks like ReactJS, Next.js, and Node.js, our development process focuses on creating custom, performance-optimized solutions tailored to your needs.",
+      list: [
+        {
+          sub: "Portfolio Website (Static/Dynamic)",
+        },
+        {
+          sub: "eCommerce Website",
+        },
+
+        {
+          sub: "CRM (Content Resource Management)",
+        },
+        {
+          sub: "Custom Website Design & Development",
+        },
+        {
+          sub: "Event Websites",
+        },
+      ],
     },
     {
       id: 2,
-      lang: "Mobile Applications",
+      lang: "App Applications",
+      list: [
+        {
+          sub: "Android",
+        },
+        {
+          sub: "Windows",
+        },
+
+        {
+          sub: "iOS",
+        },
+      ],
       discription:
-        "We create high-performing mobile applications for Android and iOS, ensuring seamless user experiences from concept to deployment. Our end-to-end solutions cover both front-end and back-end development, including intuitive UI design and robust server-side logic",
+        "We specialize in developing applications for multiple platforms",
     },
     {
       id: 3,
-      lang: "ECommerce Development",
+      lang: "Gaming Application",
       discription:
-        "Our custom eCommerce solutions are designed to increase your sales and engage your customers. Whether you're a startup or an established business, we build eCommerce platforms that provide smooth, secure shopping experiences and are optimized for conversion.",
-    },
-    {
-      id: 3,
-      lang: "Testing Services",
-      discription:
-        " Our comprehensive testing services ensure that your digital products are reliable, secure, and bug-free before launch. From performance testing to security checks, we leave no stone unturned to guarantee your products are built to the highest standards.",
-    },
-    {
-      id: 3,
-      lang: "Web Design",
-      discription:
-        "Our web design services combine stunning visuals with intuitive functionality, ensuring your website looks fantastic while providing a seamless user experience. We focus on user-centered designs, crafting websites that are both beautiful and highly functional across all devices.",
-    },
-    {
-      id: 3,
-      lang: "DevOps",
-      discription:
-        "We help you automate and streamline your development processes by implementing DevOps best practices. Our DevOps services ensure that your infrastructure is optimized for continuous integration, delivery, and deployment, resulting in faster and more efficient development cycles.",
+        " Design and development of gaming applications tailored to user experiences and engagement.",
     },
     {
       id: 4,
-      lang: "Cloud Services",
+      lang: "ECommerce Application",
       discription:
-        "We offer cloud-based solutions that enable businesses to scale effortlessly and optimize their infrastructure. Whether you're moving to the cloud or improving your current architecture, we provide services that ensure your business is future-ready and able to handle increasing demands.",
+        " Develop custom eCommerce applications for businesses to expand their reach and improve online sales.",
     },
     {
       id: 5,
-      lang: "API Development ",
+      lang: "Management Application",
       discription:
-        "We build robust RESTful APIs for seamless communication between your applications and external services. Our APIs are designed for performance, scalability, and security, ensuring reliable data exchange. With clear documentation and easy integration, we empower your business to innovate and scale effortlessly.",
+        "Create applications for managing various business processes, enhancing efficiency and productivity",
     },
+
     {
       id: 6,
-      lang: "Web Responsive Design",
+      lang: "Inventory Management",
       discription:
-        "Designing websites that adapt seamlessly to all screen sizes, ensuring an optimal user experience across desktops, tablets, and mobile devices.",
-    },
-    {
-      id: 7,
-      lang: "Hosting Server",
-      discription:
-        "Providing reliable and secure server hosting solutions, with expertise in setting up and managing cloud servers on platforms like AWS and DigitalOcean for optimized performance and scalability.",
+        "Develop customized inventory management systems to streamline stock control and order processing.",
     },
   ];
 
@@ -73,18 +78,17 @@ export function Services() {
         </p>
         <div className="  text-center">
           <p className=" mt-5 px-5  lg:text-[14px] text-[12px]">
-            By leveraging my expertise in custom software development and server
-            infrastructure management, I m dedicated to turning your ideas into
-            a reality, from setup to optimization and security
+            We offer a wide range of professional services to help businesses
+            grow and succeed in the digital world.
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 md:gap-10">
         {data.map((res) => (
           <div className="relative w-full max-w-xs mx-auto" key={res.id}>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] rounded-full blur-3xl"></div>
-            <div className="relative shadow-xl bg-gray-900 border border-gray-800 px-4 py-6 sm:px-6 sm:py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-between items-start">
-              <div className="h-6 w-6 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+            <div className="relative shadow-xl bg-gray-900 border border-gray-800 px-4 py-6 sm:px-5 sm:py-5 h-full overflow-hidden rounded-2xl flex flex-col justify-start items-start space-y-2">
+              <div className="h-6 w-6 rounded-full border flex items-center justify-center border-gray-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -101,13 +105,27 @@ export function Services() {
                 </svg>
               </div>
 
-              <h1 className="font-bold text-lg sm:text-xl text-white mb-4 relative z-50">
+              <h1 className="font-bold text-lg sm:text-xl text-white relative z-50">
                 {res.lang}
               </h1>
 
-              <p className="font-normal text-sm sm:text-base text-slate-500 mb-4 relative z-50">
-                {res.discription}
-              </p>
+              {res?.discription && (
+                <p className="font-normal text-sm sm:text-base text-slate-500 relative z-50">
+                  {res.discription}
+                </p>
+              )}
+
+              <ul className="space-y-1">
+                {res?.list &&
+                  res?.list.map((item, index) => (
+                    <li
+                      key={index}
+                      className="font-normal text-sm sm:text-base text-slate-500 relative z-50"
+                    >
+                      {item.sub}
+                    </li>
+                  ))}
+              </ul>
 
               {/* Meteor effect */}
               <Meteors number={20} />
